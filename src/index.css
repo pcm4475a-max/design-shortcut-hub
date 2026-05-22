@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #fafafa;
+  --color-surface: #ffffff;
+  --color-border: #e5e7eb;
+  --color-text: #374151;
+  --color-text-secondary: #6b7280;
+  --color-text-heading: #111827;
+  --color-accent: #2563eb;
+  --color-accent-light: #dbeafe;
+  --color-accent-hover: #1d4ed8;
+  --color-high: #059669;
+  --color-high-bg: #d1fae5;
+  --color-medium: #d97706;
+  --color-medium-bg: #fef3c7;
+  --color-low: #9ca3af;
+  --color-low-bg: #f3f4f6;
+  --color-easy: #059669;
+  --color-easy-bg: #d1fae5;
+  --color-hard: #dc2626;
+  --color-hard-bg: #fee2e2;
+  --color-ps: #001e36;
+  --color-ai: #ff7c00;
+  --color-figma: #a259ff;
+  --color-pr: #ea77ff;
+  --color-ae: #9999ff;
+
+  --font-sans: "Inter", "SF Pro Display", "PingFang SC", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", "SF Mono", "Cascadia Code", "Consolas", monospace;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Key cap style */
+.key-cap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.75rem;
+  height: 1.75rem;
+  padding: 0 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--color-text-heading);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+  box-shadow: 0 1px 0 1px var(--color-border);
+  white-space: nowrap;
+}
+
+/* Smooth transitions for filtering */
+.shortcut-card {
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
